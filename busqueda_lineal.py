@@ -1,10 +1,9 @@
-
 import random
 
 def busqueda_lineal(lista, objetivo):
     match = False
 
-    for elemento in lista:
+    for elemento in lista: #Aquí tenemos un O(n)
         if elemento == objetivo:
             match = True
             break # Este break no sirve de nada si pensamos en el peor de los casos
